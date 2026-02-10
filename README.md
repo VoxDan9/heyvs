@@ -1,6 +1,6 @@
 # Heyversus
 
-🔗 Link : https://heyversus.vercel.app/
+🔗 Link : https://heyvs.kr
 📦 Version : v0.7.5
 
 **Heyversus**는 사용자가 직접 투표를 생성하고 참여할 수 있는 동적인 웹 애플리케이션입니다. Next.js와 Supabase를 기반으로 구축되어 있으며, 실시간 투표 결과와 사용자 인증, 포인트 시스템을 제공합니다.
@@ -30,21 +30,19 @@
 
 ## 🛠️ 기술 스택
 
-- **프레임워크**: Next.js 15 (App Router)
-- **언어**: TypeScript
-- **스타일링**: Tailwind CSS v4
-- **백엔드 (BaaS)**: Supabase (Auth, PostgreSQL, Storage, Edge Functions)
-- **UI 컴포넌트**: shadcn/ui, Tailwind CSS 유틸리티 + `class-variance-authority`
-- **폼 & 검증**: react-hook-form, Zod, @hookform/resolvers
-- **아이콘**: lucide-react
-- **데이터 페칭**: `@tanstack/react-query`
-- **상태 관리**: React Query 캐시, Zustand 스토어, Supabase Session Provider
-- **테마 관리**: next-themes (다크/라이트 모드)
-- **폰트 최적화**: `next/font` (Inter)
-- **알림**: Sonner (Toast notifications)
-- **에러 모니터링**: Sentry (Error tracking, Performance monitoring, Session replay)
-- **코드 품질**: ESLint, Prettier, Husky, lint-staged
+- **프레임워크**: Next.js 15.5.7 (App Router)
+- **런타임**: React 19.1.0, React DOM 19.1.0
+- **언어**: TypeScript 5
+- **스타일링**: Tailwind CSS 3.4.17, tailwindcss-animate
+- **백엔드 (BaaS)**: Supabase (Auth, PostgreSQL, Storage)
+- **UI 컴포넌트**: shadcn/ui, Radix UI Slot, `class-variance-authority`
+- **폼/검증**: react-hook-form, Zod, @hookform/resolvers
+- **데이터 페칭/캐시**: `@tanstack/react-query` v5
+- **상태 관리**: Zustand, React Query 캐시
+- **테마/알림**: next-themes, Sonner
+- **아이콘/유틸**: lucide-react, clsx, tailwind-merge
 - **테스트**: Jest, React Testing Library
+- **코드 품질**: ESLint, Husky, lint-staged
 - **배포**: Vercel
 
 ## 📁 프로젝트 구조
@@ -95,7 +93,7 @@
 │   │   ├── types.ts     # 공유 타입
 │   │   └── utils.ts     # 공용 유틸
 │   ├── providers/       # React Query 등 글로벌 Provider 구성
-│   ├── instrumentation.ts # Sentry 등 Next.js instrumentation 훅
+│   ├── instrumentation.ts # Next.js instrumentation 훅
 │   └── middleware.ts    # Supabase 세션 관리 미들웨어
 ├── references/          # 참고 문서 및 가이드
 │   └── QUERY.md         # 데이터베이스 스키마 (SQL)
